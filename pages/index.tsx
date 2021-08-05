@@ -3,6 +3,7 @@ import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
 import FramerExample from '../components/framer';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
   const container = {
@@ -39,7 +40,8 @@ export default function Home() {
             <span className="block text-yellow-600">Ready to dive in?</span>
             <span className="block text-blue-900">
               Start your design with Easymindstudio.
-          </span>
+            </span>
+            <Link href="/posts/first-post"><a>Link to posts</a></Link>
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <motion.div variants={item} className="inline-flex rounded-md shadow">
@@ -48,7 +50,7 @@ export default function Home() {
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700"
               >
                 Get started
-            </a>
+              </a>
             </motion.div>
             <motion.div
               variants={item}
@@ -59,7 +61,7 @@ export default function Home() {
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-50"
               >
                 Learn more
-            </a>
+              </a>
             </motion.div>
           </div>
         </motion.div>
